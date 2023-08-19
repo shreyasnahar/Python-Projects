@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<form action="/list" method="post">
+    <input type="text" name="name" placeholder="Name">
+    <select>
+        <option disabled selected>Level</option>
+        <option value="Freshman">Freshman</option>
+        <option value="Junior">Junior</option>
+        <option value="Senior">Senior</option>
+    </select>
+    <button type="submit">Submit</button>
+</form>
+
+{% endblock %}
